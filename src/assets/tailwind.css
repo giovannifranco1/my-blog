@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply w-full p-0 m-0;
+  }
+  h1 {
+    @apply text-lg;
+  }
+  textarea:focus,
+  input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  select {
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex justify-center p-3 transition-all;
+  }
+  .btn--primary {
+    @apply w-16 rounded-sm bg-primary-300;
+    @apply hover:bg-primary-400;
+  }
+  .btn--wanger {
+    @apply bg-yellow-400;
+    @apply hover:bg-yellow-500;
+  }
+  .form {
+    @apply w-full p-3 h-10 transition-colors border border-primary-200 !important;
+    @apply rounded-sm;
+    @apply focus:border-primary-400 !important;
+  }
+}
